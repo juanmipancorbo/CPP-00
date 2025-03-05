@@ -1,4 +1,5 @@
-**Megaphone**
+**Exercise : 00
+Megaphone**
 
 Turn-in directory : ex00/
 Files to turn in : Makefile, megaphone.cpp
