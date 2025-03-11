@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 20:31:11 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/11 17:04:54 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/11 19:42:00 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,5 @@ int	main(int argc, char **argv)
 	}
 	else
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
+	return 0;
 }
