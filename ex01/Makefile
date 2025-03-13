@@ -6,11 +6,11 @@
 #    By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/11 17:09:34 by jpancorb          #+#    #+#              #
-#    Updated: 2025/03/11 19:42:07 by jpancorb         ###   ########.fr        #
+#    Updated: 2025/03/13 20:07:49 by jpancorb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= my_awesome_phonebook
+NAME	= felipe_phonebook
 SRCS	= main.cpp PhoneBook.cpp Contact.cpp
 HEADERS	= PhoneBook.hpp Contact.hpp
 CFLAGS	= -Wall -Wextra -Werror -std=c++98 -g
