@@ -6,14 +6,15 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:01:38 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/13 20:07:46 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/17 17:59:48 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef		CONTACT_HPP
 # define 	CONTACT_HPP
 
-#include	<string>
+# include	<iostream>
+# include	<string>
 
 class Contact
 {
@@ -25,25 +26,30 @@ class Contact
 		std::string _darkestSecret;
 	
 	public:
+		// Default constructor
 		Contact();
+		// Copy constructor
 		Contact(const Contact &other);
-		Contact &operator=(const Contact &other);
+		// Destructor
 		~Contact();
+		// Copy assignment operator
+		Contact & operator = (const Contact &other);
 
-		void		set_firstName(std::string);
-		std::string	get_firstName(void) const;
+		// Setters & Getters
+		void		set_firstName(const std::string &name);
+		std::string	get_firstName() const;
 
-		void		set_lastName(std::string);
-		std::string	get_lastName(void) const;
+		void		set_lastName(const std::string &name);
+		std::string	get_lastName() const;
 
-		void		set_nickname(std::string);
-		std::string	get_nickname(void) const;
+		void		set_nickname(const std::string &name);
+		std::string	get_nickname() const;
 
-		void		set_phoneNumber(std::string);
-		std::string	get_phoneNumber(void) const;
+		void		set_phoneNumber(const std::string &number);
+		std::string	get_phoneNumber() const;
 
-		void		set_darkestSecret(std::string);
-		std::string	get_darkestSecret(void) const;
+		void		set_darkestSecret(const std::string &secret);
+		std::string	get_darkestSecret() const;
 };
 
 #endif // CONTACT_HPP
