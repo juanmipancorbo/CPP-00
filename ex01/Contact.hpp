@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:01:38 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/17 19:30:21 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/19 21:06:43 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include	<iostream>
 # include	<string>
+# include	<cstdlib>
+# include	<cctype>
 
 class Contact
 {

@@ -6,17 +6,14 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:11:37 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/17 19:30:12 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/19 20:24:55 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"Contact.hpp"
 
 // Default constructor
-Contact::Contact()
-{
-	std::cout << "Contact created!" << std::endl;
-}
+Contact::Contact() {}
 
 // Copy constructor
 Contact::Contact(const  Contact &other)
@@ -25,10 +22,7 @@ Contact::Contact(const  Contact &other)
 }
 
 // Destructor
-Contact::~Contact()
-{
-	std::cout << "Contact destroyed!" << std::endl;
-}
+Contact::~Contact() {}
 
 // Copy assignment operator
 Contact &Contact::operator=(const Contact &other)

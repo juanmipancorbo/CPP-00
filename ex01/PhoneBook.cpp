@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:11:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/17 20:02:59 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/19 20:30:58 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,13 +67,15 @@ const	Contact &PhoneBook::getContact(int index) const
 	return contacts[index];
 }
 
-void	PhoneBook::displayContact() const
+void	PhoneBook::displayContacts() const
 {
 	int num 	= getContactCount();
 	std::cout	<< std::setw(10) << "index" << "|"
 				<< std::setw(10) << "first name" << "|"
 				<< std::setw(10) << "last name" << "|"
 				<< std::setw(10) << "nick name" << std::endl;
+	std::cout << num << std::endl;
+	
 	for (int i = 0; i < num; i++)
 	{
 		std::cout	<< std::setw(10) << i + 1 << "|";

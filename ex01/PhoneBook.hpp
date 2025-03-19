@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:05:08 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/17 20:03:43 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/19 20:21:44 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ class PhoneBook
 		void	addContact(const Contact &newContact);
 		int		getContactCount() const;
 		const	Contact &getContact(int index) const;
-		void	displayContact() const;
+		void	displayContacts() const;
 };
 
 #endif // PHONEBOOK_HPP
