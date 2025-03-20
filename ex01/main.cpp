@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:11:42 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/19 21:29:29 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/20 18:56:01 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,17 @@ static void searchContact(PhoneBook &phoneBook)
 {
 	std::string indexStr;
 
-	phoneBook.displayContacts();
+	if (phoneBook.getContactCount())
+		phoneBook.displayContacts();
+	else 
+	{ 
+		std::cout << "Nothing saved yet." << std::endl; 
+		return; 
+	}
 
 	std::cout << "Enter index to display: " << std::endl;
 	std::getline(std::cin, indexStr);
-	int index = std::atoi(indexStr.c_str()); // indexStr to INT
+	int index = std::atoi(indexStr.c_str()); // str to int
 	
 	if (index >= 1 && index <= phoneBook.getContactCount()) 
 	{

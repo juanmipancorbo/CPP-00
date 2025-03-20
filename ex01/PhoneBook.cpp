@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:11:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/20 17:14:27 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/20 18:29:51 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,8 @@ static	std::string formatField(const std::string &str)
 		return str;
 }
 
-// Default Constructor
-PhoneBook::PhoneBook() : count(0) {}
-
-// Destructor
-PhoneBook::~PhoneBook() {}
+PhoneBook::PhoneBook() : count(0) {}	// Default Constructor
+PhoneBook::~PhoneBook() {}				// Destructor
 
 // Other methods
 void	PhoneBook::addContact(const Contact &newContact)
@@ -51,7 +48,6 @@ void	PhoneBook::displayContacts() const
 				<< std::setw(10) << "first name" << "|"
 				<< std::setw(10) << "last name" << "|"
 				<< std::setw(10) << "nick name" << std::endl;
-	std::cout << num << std::endl;
 	
 	for (int i = 0; i < num; i++)
 	{
@@ -63,4 +59,5 @@ void	PhoneBook::displayContacts() const
 					<< std::setw(10) << lastName << "|"
 					<< std::setw(10) << nickName << std::endl;
 	}
+	std::cout << "Total: " << num << std::endl;
 }
