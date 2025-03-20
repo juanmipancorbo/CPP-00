@@ -2,12 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build megaphone",
+            "label": "Build Felipe PhoneBook",
             "type": "shell",
             "command": "make",
             "args": [],
             "options": {
-                "cwd": "${workspaceFolder}/ex00"
+                "cwd": "${workspaceFolder}/ex01"
             },
             "group": {
                 "kind": "build",

@@ -6,39 +6,17 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:11:37 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/19 20:24:55 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/20 17:30:46 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"Contact.hpp"
 
-// Default constructor
-Contact::Contact() {}
+Contact::Contact()	{}	// Default constructor
+Contact::~Contact()	{}	// Destructor
 
-// Copy constructor
-Contact::Contact(const  Contact &other)
-{
-	*this = other;
-}
-
-// Destructor
-Contact::~Contact() {}
-
-// Copy assignment operator
-Contact &Contact::operator=(const Contact &other)
-{
-	if (this != &other)
-	{
-		this->_firstName		= other._firstName;
-		this->_lastName			= other._lastName;
-		this->_nickname 		= other._nickname;
-		this->_phoneNumber		= other._phoneNumber;
-		this->_darkestSecret	= other._darkestSecret;
-	}
-	return *this;
-}
-
-// Setters & Getters
+	// Setters & Getters //
+	
 void		Contact::set_firstName(const std::string &name) { _firstName = name; };
 std::string	Contact::get_firstName() const { return _firstName; }
 

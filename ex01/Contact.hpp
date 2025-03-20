@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:01:38 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/19 21:06:43 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/20 17:19:07 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 class Contact
 {
 	private:
+
 		std::string _firstName;
 		std::string _lastName;
 		std::string _nickname;
@@ -28,16 +29,11 @@ class Contact
 		std::string _darkestSecret;
 	
 	public:
-		// Default constructor
-		Contact();
-		// Copy constructor
-		Contact(const Contact &other);
-		// Destructor
-		~Contact();
-		// Copy assignment operator
-		Contact & operator = (const Contact &other);
+	
+		Contact();	// Default constructor
+		~Contact();	// Destructor
 
-		// Setters & Getters
+			// Setters & Getters //
 		void		set_firstName(const std::string &name);
 		std::string	get_firstName() const;
 

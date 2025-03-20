@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:05:08 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/19 20:21:44 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/20 17:12:50 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,14 @@
 class PhoneBook
 {
 	private:
+	
 		Contact	contacts[8];
 		int		count;
 	
 	public:
-		// Default Constructor
-		PhoneBook();
 
-		// Copy constructor
-		PhoneBook(const PhoneBook &other);
-
-		// Destructor
-		~PhoneBook();
-		
-		// Copy assignment operator
-		PhoneBook & operator = (const PhoneBook &other);
+		PhoneBook();	// Default Constructor
+		~PhoneBook();	// Destructor
 
 		// Other methods
 		void	addContact(const Contact &newContact);

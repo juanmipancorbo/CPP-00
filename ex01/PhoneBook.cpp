@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:11:40 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/19 20:30:58 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/20 17:14:27 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,33 +22,10 @@ static	std::string formatField(const std::string &str)
 }
 
 // Default Constructor
-PhoneBook::PhoneBook() : count(0)
-{}
-
-// Copy constructor
-PhoneBook::PhoneBook(const PhoneBook &other) : count(other.count)
-{
-	for (int i = 0; i < 8; i++)
-	{
-		contacts[i] = other.contacts[i];
-	}
-}
+PhoneBook::PhoneBook() : count(0) {}
 
 // Destructor
-PhoneBook::~PhoneBook()
-{}
-
-// Copy assignment operator
-PhoneBook &PhoneBook::operator=(const PhoneBook &other)
-{
-	if (this != &other)
-	count = other.count;
-	for (int i = 0; i < 8; i++)
-	{
-		contacts[i] = other.contacts[i];
-	}
-	return *this;
-}
+PhoneBook::~PhoneBook() {}
 
 // Other methods
 void	PhoneBook::addContact(const Contact &newContact)

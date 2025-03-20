@@ -2,13 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug megaphone",
+            "name": "Debug Felipe PhoneBook",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/ex00/megaphone",
-            "args": [" ! ", "Sorry students, I thought this thing was off."],
+            "program": "${workspaceFolder}/ex01/felipe_phonebook",
+            "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/ex00",
+            "cwd": "${workspaceFolder}/ex01",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -19,7 +19,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build megaphone"
+            "preLaunchTask": "Build Felipe PhoneBook"
         }
     ]
 }
