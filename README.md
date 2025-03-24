@@ -77,5 +77,6 @@ stops when the user inputs EXIT.
 
 Give a relevant name to your executable.
 
-http://www.cplusplus.com/reference/string/string/ and of course
+http://www.cplusplus.com/reference/string/string/ 
+and of course
 http://www.cplusplus.com/reference/iomanip/
