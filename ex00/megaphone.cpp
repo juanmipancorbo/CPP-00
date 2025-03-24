@@ -6,17 +6,17 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 20:31:11 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/11 19:42:00 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/03/24 20:00:32 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <cctype>
 
-void	str_to_upper(char *str)
+void str_to_upper(const std::string &str)
 {
-	while(*str)
-		std::cout << static_cast<char>(std::toupper(*str++));
+	for (size_t i = 0; i < str.size(); i++)
+		std::cout << static_cast<char>(std::toupper(str[i]));
 }
 
 int	main(int argc, char **argv)
